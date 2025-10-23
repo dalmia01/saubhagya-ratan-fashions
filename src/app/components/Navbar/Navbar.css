@@ -1,0 +1,11 @@
+.nav{
+    .navLink{
+        color : rgba(var(--color-foreground), .75);
+        &.active{
+            color : rgba(var(--color-foreground), 1);
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
