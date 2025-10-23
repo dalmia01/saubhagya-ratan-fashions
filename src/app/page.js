@@ -34,6 +34,7 @@ export default function Home() {
           description="Our commitment to craftsmanship is unwavering. Each Dumroo piece is handcrafted using time-honored techniques, ensuring that your jewelry is not only beautiful but also of the highest quality."
           height="h-[32rem]"
         />
+        <div className="h-8"> </div>
       </main>
     </div>
   );

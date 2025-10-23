@@ -3,6 +3,7 @@
 import { useCartStore } from "../../store/cartStore";
 import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
+import Link from "next/link";
 
 export default function ProductCardVariant1({ product }) {
   const { addToCart, removeFromCart, items } = useCartStore();
@@ -11,7 +12,7 @@ export default function ProductCardVariant1({ product }) {
   const quantity = cartItem ? cartItem.quantity : 0;
 
   return (
-    <div className="flex flex-col items-center">
+    <Link href={`/products/${product._id}`}><div className="flex flex-col items-center">
       <Image
         src={product.image}
         alt={product.name}
@@ -29,7 +30,7 @@ export default function ProductCardVariant1({ product }) {
         {quantity > 0 ? (
           <>
             <button
-              className="p-2 rounded-full bg-gray-200"
+              className="p-2 rounded-full bg-gray-200 cursor-pointer"
               onClick={() => removeFromCart(product._id)}
             >
               <Minus size={16} />
@@ -38,7 +39,7 @@ export default function ProductCardVariant1({ product }) {
             <span className="text-lg font-medium">{quantity}</span>
 
             <button
-              className="p-2 rounded-full bg-gray-200"
+              className="p-2 rounded-full bg-gray-200 cursor-pointer"
               onClick={() => addToCart(product)}
             >
               <Plus size={16} />
@@ -46,7 +47,7 @@ export default function ProductCardVariant1({ product }) {
           </>
         ) : (
           <button
-            className="px-4 py-2 bg-black text-white rounded-lg"
+            className="px-4 py-2 bg-black text-white rounded-lg cursor-pointer"
             onClick={() => addToCart(product)}
           >
             Add to Cart
@@ -54,5 +55,6 @@ export default function ProductCardVariant1({ product }) {
         )}
       </div>
     </div>
+    </Link>
   );
 }

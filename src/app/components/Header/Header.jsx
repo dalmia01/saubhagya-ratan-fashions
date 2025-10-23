@@ -6,6 +6,7 @@ import { ShoppingBag } from "lucide-react";
 import Image from "next/image";
 import BadgeUI from "../Badge/Badge";
 import Navbar from "../Navbar/Navbar";
+import Link from "next/link";
 
 // ✅ Small helper: useIsomorphicLayoutEffect avoids hydration errors in SSR
 const useIsomorphicLayoutEffect =
@@ -29,6 +30,7 @@ export default function Header() {
 
         {/* Logo */}
         <div>
+          <Link href="/">
           <Image
             src="/suabhagya-ratan-fashions-logo.jpeg"
             alt="logo"
@@ -36,6 +38,7 @@ export default function Header() {
             height={120}
             priority
           />
+          </Link>
         </div>
 
         {/* Cart Icon */}

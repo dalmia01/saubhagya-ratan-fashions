@@ -10,7 +10,7 @@ export default function BannerWithButton({
   buttonLink = "/collections",
   height = "h-[500px]",
   overlayColor = "bg-black/40",
-  color="white"
+  color = "white",
 }) {
   return (
     <div
@@ -29,17 +29,16 @@ export default function BannerWithButton({
           <p className="text-base md:text-lg mb-6">{description}</p>
         )}
         <Link
-      href={buttonLink}
-      className={`
+          href={buttonLink}
+          className={`
         inline-block px-6 py-3 rounded border-2 font-semibold
         border-${color}-600 text-${color}-600
         hover:bg-${color}-600 hover:text-white
         transition-colors
       `}
-    >
-      {buttonText}
-    </Link>
-
+        >
+          {buttonText}
+        </Link>
       </div>
     </div>
   );
