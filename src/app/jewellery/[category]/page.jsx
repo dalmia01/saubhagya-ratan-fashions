@@ -3,13 +3,13 @@
 import { use } from "react";
 import Image from "next/image";
 import { useCartStore } from "../../store/cartStore";
-import { COLLECTION_CATEGORIES } from "../../constants/app.constants";
+import { COLLECTION_CATEGORIES, ACCESSORIES } from "../../constants/app.constants";
 import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
 
 export default function CategoryPage({ params }) {
   const { category } = use(params);
 
-  const categoryInfo = COLLECTION_CATEGORIES.find(
+  const categoryInfo = [...COLLECTION_CATEGORIES, ...ACCESSORIES].find(
     (c) => c.name.toLowerCase() === category.toLowerCase()
   );
 

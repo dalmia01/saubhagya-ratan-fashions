@@ -3,7 +3,7 @@
 import Link from "next/link";
 import "./footer.css";
 import FooterLinks from "./FooterLinks";
-import { MENU_LINKS, QUICK_LINKS } from "../../constants/app.constants";
+import { ADDRESS, EMAIL_ID, FOOTER_MENU_LINKS, MENU_LINKS, PHONE_NO, QUICK_LINKS } from "../../constants/app.constants";
 
 export default function Footer() {
   return (
@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
 
         {/* Column 2: Pages Links */}
-        <FooterLinks links={MENU_LINKS} headText={"Shop"} />
+        <FooterLinks links={FOOTER_MENU_LINKS} headText={"Shop"} />
 
         {/* Column 3: Quick Links */}
         <FooterLinks links={QUICK_LINKS} headText={"Quick Links"} />
@@ -29,27 +29,30 @@ export default function Footer() {
           <p>
             Email:{" "}
             <a
-              href="mailto:contact@mystore.com"
+              href={`mailto:${EMAIL_ID}`}
               className="hover:text-white text-sm "
             >
-              contact@mystore.com
+              {EMAIL_ID}
             </a>
           </p>
           <p>
             Phone:{" "}
-            <a href="tel:+1234567890" className="hover:text-white text-sm ">
-              +1 234 567 890
+            <a href={`tel:${PHONE_NO}`} className="hover:text-white text-sm ">
+              {PHONE_NO}
             </a>
           </p>
-          <p className="mt-2 text-gray-400 text-sm">
-            123 Main Street, City, Country
+          <p>
+            Address:{" "}
+            <span  className="hover:text-white text-sm ">
+              {ADDRESS}
+            </span>
           </p>
         </div>
       </div>
 
       {/* Bottom Footer */}
       <div className="mt-12 text-center text-gray-500 text-sm">
-        &copy; {new Date().getFullYear()} MyStore. All rights reserved.
+        &copy; {new Date().getFullYear()} saubhagya ratan fashions. All rights reserved.
       </div>
     </footer>
   );

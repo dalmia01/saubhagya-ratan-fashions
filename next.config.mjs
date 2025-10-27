@@ -7,6 +7,16 @@ const nextConfig = {
         hostname: "shopdumroo.com", // 👈 your external image domain
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com", // 👈 your external image domain
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn-icons-png.flaticon.com", // 👈 your external image domain
+        pathname: "/**",
+      },
     ],
   },
 

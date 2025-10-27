@@ -40,6 +40,7 @@
   --white-font: rgba(252,252,252);
   --color-foreground: rgb(2,9,18);
   --color-green1: #0b3b46;
+  --color-green2: #1c9985;
 }
 
 @theme inline {
@@ -130,3 +131,18 @@
 html, body{
   font-family: "Coromorant";
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+

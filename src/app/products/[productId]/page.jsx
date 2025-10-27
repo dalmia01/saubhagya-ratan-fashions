@@ -77,8 +77,8 @@ export default function ProductPage({ params }) {
           </div>
 
           <button
-            className="bg-black hover:bg-black-700 text-white px-6 py-2 rounded-md transition cursor-pointer"
-            onClick={() => addToCart({ ...product, quantity })}
+            className="bg-[#0b3b46] text-white px-6 py-2 rounded-md transition cursor-pointer"
+            onClick={() => addToCart(product)}
           >
             Add to Cart
           </button>

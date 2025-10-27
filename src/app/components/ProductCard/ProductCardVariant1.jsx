@@ -12,14 +12,15 @@ export default function ProductCardVariant1({ product }) {
   const quantity = cartItem ? cartItem.quantity : 0;
 
   return (
-    <Link href={`/products/${product._id}`}><div className="flex flex-col items-center">
-      <Image
+    <div className="flex flex-col items-center">
+      <Link href={`/products/${product._id}`}><Image
         src={product.image}
         alt={product.name}
         width={250}
         height={250}
         className="rounded-xl object-cover"
       />
+      </Link>
 
       <div className="mt-3 text-center">
         <h3 className="text-lg font-semibold">{product.name}</h3>
@@ -47,7 +48,7 @@ export default function ProductCardVariant1({ product }) {
           </>
         ) : (
           <button
-            className="px-4 py-2 bg-black text-white rounded-lg cursor-pointer"
+            className="px-4 py-2 bg-[#0b3b46] text-white rounded-lg cursor-pointer"
             onClick={() => addToCart(product)}
           >
             Add to Cart
@@ -55,6 +56,5 @@ export default function ProductCardVariant1({ product }) {
         )}
       </div>
     </div>
-    </Link>
   );
 }

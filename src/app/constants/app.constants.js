@@ -1,35 +1,53 @@
 export const COLLECTION_CATEGORIES = [
-  {
-    name: "Bracelets",
-    description:
-      "Explore our exquisite collection of bracelets handcrafted with care.",
+   {
+    name: "Rings",
+    description: "Find rings that make a statement and capture elegance.",
     image: "https://shopdumroo.com/cdn/shop/files/2.png",
-    href: "/collections/bracelets",
+    href: "/jewellery/rings",
+  },
+  {
+    name: "Jhumka",
+    description:
+      "Explore our exquisite collection of jhumka handcrafted with care.",
+    image: "https://shopdumroo.com/cdn/shop/files/2.png",
+    href: "/jewellery/jhumka",
   },
   {
     name: "Earrings",
     description: "Discover elegant earrings perfect for every occasion.",
     image: "https://shopdumroo.com/cdn/shop/files/2.png",
-    href: "/collections/earrings",
+    href: "/jewellery/earrings",
   },
   {
     name: "Necklaces",
     description: "Shop stunning necklaces that elevate any outfit.",
     image: "https://shopdumroo.com/cdn/shop/files/2.png",
-    href: "/collections/necklaces",
+    href: "/jewellery/necklaces",
   },
-  {
-    name: "Rings",
-    description: "Find rings that make a statement and capture elegance.",
+ 
+]
+
+export const ACCESSORIES = [
+   {
+    name: "Accessories",
+    description: "Find accessories that make a statement and capture elegance.",
     image: "https://shopdumroo.com/cdn/shop/files/2.png",
-    href: "/collections/rings",
+    href: "/jewellery/accessories",
   },
+ 
 ]
 
 export const MENU_LINKS = [
   { name: "Home", href: "/" },
-  ...COLLECTION_CATEGORIES,
-  { name: "Collections", href: "/collections" },
+  { name: "Jewellery", href: "/jewellery" },
+  { name: "Accessories", href: "/jewellery/accessories" },
+  { name: "Contact Us", href: "/contact" },
+];
+
+export const FOOTER_MENU_LINKS = [
+  { name: "Home", href: "/" },
+  { name: "Jewellery", href: "/jewellery" },
+  { name: "Accessories", href: "/jewellery/accessories" },
 ];
 
 export const QUICK_LINKS = [
@@ -245,5 +263,9 @@ export const DUMMY_PRODUCTS = [
       "Beautiful silver earrings designed to complement any outfit. Lightweight and stylish.",
   },
 ];
+
+export const EMAIL_ID = "saubhagyaratanfashions@gmail.com";
+export const PHONE_NO = "+91 7065572044";
+export const ADDRESS = "Tilak Nagar, Delhi";
 
 
