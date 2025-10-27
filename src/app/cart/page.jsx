@@ -65,7 +65,7 @@ export default function CartPage() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <h2 className="text-2xl font-bold">Your Cart</h2>
           <a
-            href="/collections/jewellery"
+            href="/jewellery"
             className="text-sm text-[#0b3b46] underline underline-offset-4"
           >
             Continue Shopping
