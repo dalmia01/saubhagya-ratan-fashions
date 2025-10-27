@@ -69,7 +69,7 @@ export default function CartPage() {
             className="text-sm text-[#0b3b46] underline underline-offset-4"
           >
             Continue Shopping
-          </a>
+          </a> 
         </div>
 
         {cart.map((item) => (
