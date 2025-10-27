@@ -6,6 +6,7 @@ import { useCartStore } from "../store/cartStore";
 import { Trash2 } from "lucide-react";
 import CartModal from "../components/modal/CartModal";
 import EmptyCart from "../components/EmptyCart/EmptyCart";
+import Link from "next/link";
 
 export default function CartPage() {
   const {
@@ -74,7 +75,7 @@ export default function CartPage() {
         {cart.map((item) => (
           <div
             key={item._id}
-            className="flex flex-col sm:flex-row sm:items-center justify-between border rounded-lg p-4 gap-4 hover:shadow-lg transition"
+            className="flex flex-col sm:flex-row sm:items-center justify-between border rounded-lg p-4 gap-4 transition"
           >
             {/* Product Image */}
             <div className="relative w-full sm:w-24 h-40 sm:h-24 flex-shrink-0">
@@ -140,8 +141,14 @@ export default function CartPage() {
           <span className="font-bold">₹{total}</span>
         </div>
 
+        <small>
+          Taxes included. Discounts and{" "}
+          <Link className="text-[#0b3b46] underline underline-offset-2" href="/shipping">shipping</Link> calculated at
+          checkout.
+        </small>
+
         {/* Buttons */}
-        <div className="flex flex-col gap-3 mt-4">
+        <div className="flex flex-col gap-3 mt-2">
           <button
             className="w-full bg-gray-500 hover:bg-gray-600 text-white py-2 rounded-md transition"
             onClick={clearCart}
