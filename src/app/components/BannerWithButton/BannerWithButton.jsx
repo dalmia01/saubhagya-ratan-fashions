@@ -7,7 +7,7 @@ export default function BannerWithButton({
   heading,
   description,
   buttonText = "Shop Now",
-  buttonLink = "/collections",
+  buttonLink = "/jewellery",
   height = "h-[500px]",
   overlayColor = "bg-black/40",
   color = "white",

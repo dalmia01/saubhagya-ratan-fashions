@@ -32,7 +32,7 @@ export default function EmptyCart() {
 
         {/* CTA Button */}
         <Link
-          href="/collections"
+          href="/jewellery"
           className="inline-block bg-[#0b3b46] hover:bg-[#1c9985] text-white font-semibold px-8 py-3 rounded-lg shadow-md transition-all duration-300"
         >
           Continue Shopping

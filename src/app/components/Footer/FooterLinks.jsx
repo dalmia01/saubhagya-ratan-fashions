@@ -15,7 +15,7 @@ export default function FooterLinks({links, headText}) {
           const isActive =
             pathname === link.href ||
             (pathname.startsWith(link.href + "/") &&
-              link.href !== "/collections");
+              link.href !== "/jewellery");
 
           return (
             <li key={link.name}>
