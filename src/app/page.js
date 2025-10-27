@@ -13,10 +13,10 @@ export default function Home() {
           imageUrl="https://res.cloudinary.com/degndcs2r/image/upload/v1761218909/home_hero_baner_bkqwyw.jpg"
           height="min-h-screen"
         />
-        {/* <TextBannerWhite
+        <TextBannerWhite
           heading="The Essence of Saubhagya Ratan Fashions"
           description="Welcome to Saubhagya Ratan Fashions, a haven where each piece of jewelry celebrates your unique melody. We draw inspiration from the rich tapestry of Indian heritage, particularly the iconic dumroo, Lord Shiva's creation instrument. This powerful symbol reflects the rhythm of your life and the captivating melody of your journey."
-        /> */}
+        />
         {/* <BannerWithButton
           imageUrl="https://shopdumroo.com/cdn/shop/files/Gemini_Generated_Image_3.png?v=1709995397"
           heading="Discover Our Collections"
