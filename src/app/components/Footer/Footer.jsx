@@ -15,6 +15,12 @@ export default function Footer() {
           <p className="text-white text-sm ">
             <a href="https://www.instagram.com/">Instagram</a>
           </p>
+          <p className="text-white text-sm mt-2">
+            <a href="https://www.youtube.com/">Youtube</a>
+          </p>
+          <p className="text-white text-sm mt-1">
+            <a href="https://www.facebook.com/">Facebook</a>
+          </p>
         </div>
 
         {/* Column 2: Pages Links */}
