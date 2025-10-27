@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { JEWELLERY_LINK } from "../../constants/app.constants";
 
 export default function MobileSidebarMenu({ links = null }) {
 
@@ -137,7 +138,7 @@ export default function MobileSidebarMenu({ links = null }) {
           {/* Footer Section */}
           <div className="px-4 py-4 border-t hidden">
             <Link
-              href="/jewellery"
+              href={JEWELLERY_LINK}
               onClick={() => setOpen(false)}
               className="block w-full text-center bg-[#0b3b46] text-white px-4 py-2 rounded-md font-semibold transition"
             >

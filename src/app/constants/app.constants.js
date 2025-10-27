@@ -1,28 +1,30 @@
+export const JEWELLERY_LINK = "/jewellery"
+
 export const COLLECTION_CATEGORIES = [
    {
     name: "Rings",
     description: "Find rings that make a statement and capture elegance.",
     image: "https://shopdumroo.com/cdn/shop/files/2.png",
-    href: "/jewellery/rings",
+    href: `${JEWELLERY_LINK}/rings`,
   },
   {
     name: "Jhumka",
     description:
       "Explore our exquisite collection of jhumka handcrafted with care.",
     image: "https://shopdumroo.com/cdn/shop/files/2.png",
-    href: "/jewellery/jhumka",
+    href: `${JEWELLERY_LINK}/jhumka`,
   },
   {
     name: "Earrings",
     description: "Discover elegant earrings perfect for every occasion.",
     image: "https://shopdumroo.com/cdn/shop/files/2.png",
-    href: "/jewellery/earrings",
+    href: `${JEWELLERY_LINK}/earrings`,
   },
   {
     name: "Necklaces",
     description: "Shop stunning necklaces that elevate any outfit.",
     image: "https://shopdumroo.com/cdn/shop/files/2.png",
-    href: "/jewellery/necklaces",
+    href: `${JEWELLERY_LINK}/necklaces`,
   },
  
 ]
@@ -32,22 +34,22 @@ export const ACCESSORIES = [
     name: "Accessories",
     description: "Find accessories that make a statement and capture elegance.",
     image: "https://shopdumroo.com/cdn/shop/files/2.png",
-    href: "/jewellery/accessories",
+    href: `${JEWELLERY_LINK}/accessories`,
   },
  
 ]
 
 export const MENU_LINKS = [
   { name: "Home", href: "/" },
-  { name: "Jewellery", href: "/jewellery" },
-  { name: "Accessories", href: "/jewellery/accessories" },
+  { name: "Jewellery", href: JEWELLERY_LINK },
+  { name: "Accessories", href: `${JEWELLERY_LINK}/accessories` },
   { name: "Contact Us", href: "/contact" },
 ];
 
 export const FOOTER_MENU_LINKS = [
   { name: "Home", href: "/" },
-  { name: "Jewellery", href: "/jewellery" },
-  { name: "Accessories", href: "/jewellery/accessories" },
+  { name: "Jewellery", href: JEWELLERY_LINK },
+  { name: "Accessories", href: `${JEWELLERY_LINK}/accessories` },
 ];
 
 export const QUICK_LINKS = [

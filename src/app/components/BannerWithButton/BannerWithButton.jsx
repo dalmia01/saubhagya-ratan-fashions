@@ -1,5 +1,6 @@
 "use client";
 
+import { JEWELLERY_LINK } from "../../constants/app.constants";
 import Link from "next/link";
 
 export default function BannerWithButton({
@@ -7,7 +8,7 @@ export default function BannerWithButton({
   heading,
   description,
   buttonText = "Shop Now",
-  buttonLink = "/jewellery",
+  buttonLink = JEWELLERY_LINK,
   height = "h-[500px]",
   overlayColor = "bg-black/40",
   color = "white",

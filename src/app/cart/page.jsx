@@ -7,6 +7,7 @@ import { Trash2 } from "lucide-react";
 import CartModal from "../components/modal/CartModal";
 import EmptyCart from "../components/EmptyCart/EmptyCart";
 import Link from "next/link";
+import { JEWELLERY_LINK } from "../constants/app.constants";
 
 export default function CartPage() {
   const {
@@ -65,7 +66,7 @@ export default function CartPage() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <h2 className="text-2xl font-bold">Your Cart</h2>
           <a
-            href="/jewellery"
+            href={JEWELLERY_LINK}
             className="text-sm text-[#0b3b46] underline underline-offset-4"
           >
             Continue Shopping

@@ -1,5 +1,6 @@
 "use client";
 
+import { JEWELLERY_LINK } from "../../constants/app.constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -15,7 +16,7 @@ export default function FooterLinks({links, headText}) {
           const isActive =
             pathname === link.href ||
             (pathname.startsWith(link.href + "/") &&
-              link.href !== "/jewellery");
+              link.href !== JEWELLERY_LINK);
 
           return (
             <li key={link.name}>
